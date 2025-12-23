@@ -1,0 +1,139 @@
+/* ===== CSS RESET ===== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --primary-color: #FF6565;
+    --dark-color: #071629;
+    --white-color: #ffffff;
+    --max-width: 1000px;
+    --font-main: 'Source Sans Pro', Arial, sans-serif;
+    --font-logo: 'Spin Cycle OT', Arial, sans-serif;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: var(--font-main);
+    color: var(--dark-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HERO LAYOUT ===== */
+.hero {
+    padding: 40px 0 80px;
+    text-align: center;
+}
+
+/* ===== NAV LAYOUT ===== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* ===== HERO CONTENT LAYOUT ===== */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+/* ===== HERO BACKGROUND ===== */
+.hero {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    /* linear-gradient(
+        rgba(7, 22, 41, 0.75),
+        rgba(7, 22, 41, 0.75)
+    ),
+    url("images/headphones_hero.jpg") center/cover no-repeat;
+    color: var(--white-color);//
+}
+
+/* ===== LOGO ===== */
+.logo {
+    font-family: var(--font-logo);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ===== NAV LINKS ===== */
+.nav-links a {
+    font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: var(--primary-color);
+}
+
+/* ===== BUTTON ===== */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 14px 32px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    opacity: 0.9;
+}
