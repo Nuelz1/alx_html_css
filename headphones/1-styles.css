@@ -29,6 +29,56 @@
   font-display: block;
 }
 
+.what-we-do {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.what-we-do .section-desc {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    width: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    font-family: "holberton_school-icon";
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.feature h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.feature p {
+    max-width: 220px;
+    color: #666;
+    line-height: 1.5;
+}
 
 /* ===== GLOBAL STYLES ===== */
 body {
@@ -100,16 +150,10 @@ button {
 .hero {
     background-image: url("images/headphones_hero_1.jpg");
     background-size: cover;
-    /* linear-gradient(
-        rgba(7, 22, 41, 0.75),
-        rgba(7, 22, 41, 0.75)
-    ),
-    url("images/headphones_hero.jpg") center/cover no-repeat;
-    color: var(--white-color);//
+    color: var(--black-color);
 }
 
 /* ===== LOGO ===== */
-.logo {
     font-family: var(--font-logo);
     font-size: 18px;
     font-weight: bold;
@@ -148,27 +192,29 @@ button {
 
 .btn-primary:hover,
 .btn-primary:active {
-    opacity: 0.9;
+    opacity: 0.7;
 }
+
 
 @media (max-width: 480px) {
 
-    .features {
-        flex-direction: column;
-        gap: 40px;
-    }
+  .features {
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
 
-    .what-we-do {
-        padding: 60px 0;
-    }
+  .feature {
+    text-align: center;
+    align-items: center;
+  }
 
-    .icon {
-        font-size: 80px;
-    }
+  .icon {
+    font-size: 60px !important;
+  }
+
+  .what-we-do {
+    padding: 50px 16px;
+  }
 }
 
-@media (max-width: 480px) {
-    body {
-        background: yellow;
-    }
-}
